@@ -365,7 +365,7 @@ int handleoutput( int fd )
     // We are looking for the string
     static int prevmatch=0; // If the "password" prompt is repeated, we have the wrong password.
     static int state1, state2, state3;
-    static const char *compare1="assword:"; // Asking for a password
+    static const char *compare1=PASSWORD_PROMPT; // Asking for a password
     static const char compare2[]="The authenticity of host "; // Asks to authenticate host
     static const char compare3[] = "Warning: the RSA host key for"; // Key changes
     // static const char compare3[]="WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!"; // Warns about man in the middle attack
